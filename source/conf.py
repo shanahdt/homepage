@@ -28,8 +28,7 @@ import sys, os
 
 extensions = ['sphinxcontrib.googleanalytics']
 googleanalytics_id <string>:
-	UA id for your site, example::
-		googleanalytics_id = 'UA-38564674-1'
+	googleanalytics_id = 'UA-38564674-1'
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
