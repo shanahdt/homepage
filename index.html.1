@@ -1,0 +1,1606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8">
+  <title>
+  birkenfeld / sphinx-contrib   &mdash; Bitbucket
+</title>
+  <link rel="icon" type="image/png" href="https://d3oaxc4q5k2d6q.cloudfront.net/m/965d93c157b4/img/favicon.png">
+  <meta id="bb-canon-url" name="bb-canon-url" content="https://bitbucket.org">
+  
+  
+<link rel="stylesheet" href="https://d3oaxc4q5k2d6q.cloudfront.net/m/965d93c157b4/compressed/css/d67f48e06804.css" type="text/css" />
+<link rel="stylesheet" href="https://d3oaxc4q5k2d6q.cloudfront.net/m/965d93c157b4/compressed/css/544e93681d1b.css" type="text/css" />
+
+  <!--[if lt IE 9]><link rel="stylesheet" href="https://d3oaxc4q5k2d6q.cloudfront.net/m/965d93c157b4/css/aui/aui-ie.css" media="all"><![endif]-->
+  <!--[if IE 9]><link rel="stylesheet" href="https://d3oaxc4q5k2d6q.cloudfront.net/m/965d93c157b4/css/aui/aui-ie9.css" media="all"><![endif]-->
+  <!--[if IE]><link rel="stylesheet" href="https://d3oaxc4q5k2d6q.cloudfront.net/m/965d93c157b4/css/aui-overrides-ie.css" media="all"><![endif]-->
+  <meta name="description" content="
+  
+    Contributed extensions for Sphinx.
+
+This shared repository is open for anyone who wants to maintain a Sphinx extension publicly.
+  
+"/>
+  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Bitbucket" />
+  
+  
+  
+    <link href="/birkenfeld/sphinx-contrib/rss" rel="alternate nofollow" type="application/rss+xml" title="RSS feed for sphinx-contrib" />
+  
+
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content="@bitbucket"/>
+  <meta name="og:type" content="bitbucket:hgrepository"/>
+  <meta name="og:title" content="birkenfeld / sphinx-contrib"/>
+  <meta name="og:url" content="https://bitbucket.org/birkenfeld/sphinx-contrib"/>
+  
+    <meta name="og:description" content="Contributed extensions for Sphinx.
+
+This shared repository is open for anyone who wants to maintain a Sphinx extension publicly."/>
+  
+  
+    <meta name="og:image" content="https://d3oaxc4q5k2d6q.cloudfront.net/m/965d93c157b4/img/language-avatars/default_128.png"/>
+  
+  
+
+
+
+
+<script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script></head>
+<body class="production "
+      data-base-url="https://bitbucket.org"
+      data-no-avatar-image="https://d3oaxc4q5k2d6q.cloudfront.net/m/965d93c157b4/img/default_avatar/16/user_blue.png"
+      data-current-user="{&quot;isKbdShortcutsEnabled&quot;: true, &quot;isSshEnabled&quot;: false, &quot;isAuthenticated&quot;: false}"
+      
+       data-current-repo="{&quot;scm&quot;: &quot;hg&quot;, &quot;language&quot;: &quot;&quot;, &quot;id&quot;: 11893, &quot;readOnly&quot;: false, &quot;mainbranch&quot;: {&quot;name&quot;: &quot;default&quot;}, &quot;owner&quot;: {&quot;username&quot;: &quot;birkenfeld&quot;, &quot;isTeam&quot;: false}, &quot;pygmentsLanguage&quot;: null, &quot;slug&quot;: &quot;sphinx-contrib&quot;}"
+      
+      
+      
+      
+      >
+<script type="text/javascript" src="https://d3oaxc4q5k2d6q.cloudfront.net/m/965d93c157b4/compressed/js/7a107bcc2ab3.js"></script>
+
+<div id="page">
+  <div id="wrapper">
+    
+  
+
+
+    <header id="header" role="banner">
+      
+  
+    
+  
+
+      <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+          <div class="aui-header-primary">
+            
+  
+
+            
+              <h1 class="aui-header-logo aui-header-logo-bitbucket logged-out">
+                <a href="/" class="aui-nav-imagelink" id="logo-link">
+                  <span class="aui-header-logo-device">Bitbucket</span>
+                </a>
+              </h1>
+            
+            
+  <script id="repo-dropdown-template" type="text/html">
+  
+
+[[#hasViewed]]
+  <div class="aui-dropdown2-section">
+    <strong class="viewed">Recently viewed</strong>
+    <ul class="aui-list-truncate">
+      [[#viewed]]
+        <li class="[[#is_private]]private[[/is_private]][[^is_private]]public[[/is_private]] repository">
+          <a href="[[url]]" title="[[owner]]/[[name]]" class=" aui-icon-container">
+            <img class="repo-avatar size16" src="[[{avatar}]]" alt="[[owner]]/[[name]] avatar"/>
+            [[owner]] / [[name]]
+          </a>
+        </li>
+      [[/viewed]]
+    </ul>
+  </div>
+[[/hasViewed]]
+[[#hasUpdated]]
+<div class="aui-dropdown2-section">
+  <strong class="updated">Recently updated</strong>
+  <ul class="aui-list-truncate">
+    [[#updated]]
+    <li class="[[#is_private]]private[[/is_private]][[^is_private]]public[[/is_private]] repository">
+      <a href="[[url]]" title="[[owner]]/[[name]]" class=" aui-icon-container">
+        <img class="repo-avatar size16" src="[[{avatar}]]" alt="[[owner]]/[[name]] avatar"/>
+        [[owner]] / [[name]]
+      </a>
+    </li>
+    [[/updated]]
+  </ul>
+</div>
+[[/hasUpdated]]
+
+</script>
+  <ul role="menu" class="aui-nav">
+    
+      <li>
+        <a href="/plans">
+            Pricing
+        </a>
+      </li>
+      <li>
+        <a href="/whats-new">
+          Latest features
+        </a>
+      </li>
+    
+  </ul>
+
+          </div>
+          <div class="aui-header-secondary">
+            
+  <ul role="menu" class="aui-nav">
+    <li>
+      <form action="/repo/all" method="get" class="aui-quicksearch">
+        <label for="search-query" class="assistive">owner/repository</label>
+        <input id="search-query" class="search" type="text" placeholder="owner/repository" name="name">
+      </form>
+    </li>
+    <li>
+      <a class="aui-dropdown2-trigger" aria-controls="header-help-dropdown" aria-owns="header-help-dropdown"
+         aria-haspopup="true" data-container="#header .aui-header-inner" href="#header-help-dropdown">
+        <span class="aui-icon aui-icon-small aui-iconfont-help">Help</span><span class="aui-icon-dropdown"></span>
+      </a>
+      <nav id="header-help-dropdown" class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" aria-hidden="true">
+        <div class="aui-dropdown2-section">
+          <ul>
+            <li>
+              <a href="/whats-new" id="features-link">
+                Latest features
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="aui-dropdown2-section">
+          <ul>
+            <li>
+              <a class="support-ga"
+                 data-support-gaq-page="DocumentationHome"
+                 href="https://confluence.atlassian.com/x/bgozDQ"
+                 target="_blank">
+                Documentation
+              </a>
+            </li>
+            <li>
+              <a class="support-ga"
+                 data-support-gaq-page="Documentation101"
+                 href="https://confluence.atlassian.com/x/cgozDQ"
+                 target="_blank">
+                Bitbucket 101
+              </a>
+            </li>
+            <li>
+              <a class="support-ga"
+                 data-support-gaq-page="DocumentationKB"
+                 href="https://confluence.atlassian.com/x/2w4zDQ"
+                 target="_blank">
+                Knowledge base
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="aui-dropdown2-section">
+          <ul>
+            <li>
+              <a class="support-ga"
+                 data-support-gaq-page="Answers"
+                 href="https://answers.atlassian.com/tags/bitbucket/"
+                 target="_blank">
+                Bitbucket on Atlassian Answers
+              </a>
+            </li>
+            <li>
+              <a class="support-ga"
+                 data-support-gaq-page="Home"
+                 href="/support">
+              Support
+            </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </li>
+      
+        
+          <li>
+            <a class="aui-dropdown2-trigger" href="#header-language"
+              aria-controls="header-language" aria-owns="header-language"
+              aria-haspopup="true" data-container="#header .aui-header-inner">
+              <span>English</span></a>
+            <nav id="header-language" class="aui-dropdown2 aui-style-default aui-dropdown2-radio aui-dropdown2-in-header"
+                aria-hidden="true">
+              <form method="post" action="/account/language/setlang/">
+                <div style='display:none'><input type='hidden' name='csrfmiddlewaretoken' value='HhZPpSrtLONKviH68VUz6P5oW7PMoSbr' /></div>
+                <input type="hidden" name="language" value="">
+                <ul>
+                <li><a class="aui-dropdown2-radio interactive checked"
+                      data-value="en" href="#en">English</a></li>
+                
+                <li><a class="aui-dropdown2-radio interactive "
+                      data-value="ja" href="#ja">日本語</a></li>
+                </ul>
+              </form>
+            </nav>
+          </li>
+        
+      
+    
+        <li id="header-signup-button">
+          <a id="sign-up-link" class="aui-button aui-button-primary aui-style" href="/account/signup/">
+            Sign up
+          </a>
+        </li>
+      <li id="user-options">
+        <a href="/account/signin/?next=/birkenfeld/sphinx-contrib/" class="aui-nav-link login-link">Log in</a>
+      </li>
+    
+  </ul>
+
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    
+  <header id="account-warning" role="banner"
+          class="aui-message-banner warning ">
+    <div class="center-content">
+      <span class="aui-icon aui-icon-warning"></span>
+      <span class="message">
+        
+      </span>
+    </div>
+  </header>
+
+    
+    
+      <header id="aui-message-bar">
+        
+      </header>
+    
+
+
+    
+  <header id="repo-warning" role="banner" class="aui-message-banner warning">
+    <div class="center-content">
+      <span class="aui-icon aui-icon-warning"></span>
+      <span class="message">
+      </span>
+    </div>
+  </header>
+  <script id="repo-warning-template" type="text/html">
+  
+
+
+
+
+  This repository's ownership is pending transfer to <a href="/[[username]]">[[username]]</a>.
+  Visit the <a href="/birkenfeld/sphinx-contrib/admin/transfer">transfer repository page</a> to view more details.
+
+
+</script>
+  <header id="repo-header" class="subhead row" data-modules="repo/index">
+    <div class="center-content">
+      <div class="repo-summary with-repo-watch">
+        <a class="repo-avatar-link" href="/birkenfeld/sphinx-contrib">
+          <span class="repo-avatar-container size64" title="birkenfeld/sphinx-contrib">
+  <img alt="birkenfeld/sphinx-contrib" src="https://d3oaxc4q5k2d6q.cloudfront.net/m/965d93c157b4/img/language-avatars/default_64.png">
+</span>
+
+          
+        </a>
+        <h1><a class="repo-link" href="/birkenfeld/sphinx-contrib">sphinx-contrib</a></h1>
+        <ul class="repo-metadata clearfix">
+          <li>
+            <a class="user" href="/birkenfeld">
+              <span class="aui-icon aui-icon-small aui-iconfont-user">User icon</span>
+              <span>birkenfeld</span>
+            </a>
+          </li>
+          
+          
+          
+        </ul>
+      </div>
+      <div id="repo-toolbar" class="bb-toolbar">
+        
+          <div class="aui-buttons">
+            <a id="repo-clone-button" class="aui-button"
+              href="https://bitbucket.org/birkenfeld/sphinx-contrib">
+              <span class="aui-icon aui-icon-small aui-iconfont-devtools-clone"></span>
+              <span>Clone</span>
+              <span class="aui-icon-dropdown"></span>
+            </a>
+            
+              
+                <a id="fork-button" class="aui-button"
+                   href="/birkenfeld/sphinx-contrib/fork">
+                  <span class="aui-icon aui-icon-small aui-iconfont-devtools-fork"></span>
+                  <span>Fork</span>
+                </a>
+              
+              <a id="compare-button" class="aui-button"
+                 href="/birkenfeld/sphinx-contrib/compare">
+                <span class="aui-icon aui-icon-small aui-iconfont-devtools-compare"></span>
+                <span>Compare</span>
+              </a>
+            
+          </div>
+        
+        
+        
+
+<div id="repo-clone-dialog" class="clone-dialog hidden">
+  
+<div class="clone-url">
+  <div class="aui-buttons">
+    <a href="https://bitbucket.org/birkenfeld/sphinx-contrib"
+       class="aui-button aui-style aui-dropdown2-trigger" aria-haspopup="true"
+       aria-owns="clone-url-dropdown-header">
+      <span class="dropdown-text">HTTPS</span>
+    </a>
+    <div id="clone-url-dropdown-header" class="aui-dropdown2 aui-style-default">
+      <ul class="aui-list-truncate">
+        <li>
+          <a href="https://bitbucket.org/birkenfeld/sphinx-contrib"
+            
+              data-command="hg clone https://bitbucket.org/birkenfeld/sphinx-contrib"
+            
+            class="item-link https">HTTPS
+          </a>
+        </li>
+        <li>
+          <a href="ssh://hg@bitbucket.org/birkenfeld/sphinx-contrib"
+            
+              data-command="hg clone ssh://hg@bitbucket.org/birkenfeld/sphinx-contrib"
+            
+            class="item-link ssh">SSH
+          </a>
+        </li>
+      </ul>
+    </div>
+    <input type="text" readonly="readonly" value="hg clone https://bitbucket.org/birkenfeld/sphinx-contrib">
+  </div>
+  
+  <p>Need help cloning? Visit
+     <a href="https://confluence.atlassian.com/x/cgozDQ" target="_blank">Bitbucket 101</a>.</p>
+  
+</div>
+
+
+  
+  
+  
+
+<div class="sourcetree-callout clone-in-sourcetree"
+  data-https-url="https://bitbucket.org/birkenfeld/sphinx-contrib"
+  data-ssh-url="ssh://hg@bitbucket.org/birkenfeld/sphinx-contrib">
+
+  <div>
+    <button class="aui-button aui-style aui-button-primary">
+      
+        Clone in SourceTree
+      
+    </button>
+  </div>
+
+  <p class="windows-text">
+      
+        <a href="http://www.sourcetreeapp.com/?utm_source=internal&amp;utm_medium=link&amp;utm_campaign=clone_repo_win" target="_blank">Atlassian SourceTree</a>
+        is a free Git and Mercurial client for Windows.
+      
+  </p>
+  <p class="mac-text">
+      
+        <a href="http://www.sourcetreeapp.com/?utm_source=internal&amp;utm_medium=link&amp;utm_campaign=clone_repo_mac" target="_blank">Atlassian SourceTree</a>
+        is a free Git and Mercurial client for Mac.
+      
+  </p>
+</div>
+
+  
+</div>
+
+        <div id="repo-more-dropdown" class="aui-dropdown2 aui-style-default">
+          <ul>
+            <li>
+              <a id="compare-button" href="/birkenfeld/sphinx-contrib/compare">
+                Compare
+              </a>
+            </li>
+            
+              <li>
+                <a id="fork-button" href="/birkenfeld/sphinx-contrib/fork">
+                  Fork
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+        
+          <div class="hidden kb-shortcut-actions">
+            <a id="repo-create-issue" href="/birkenfeld/sphinx-contrib/issues/new"></a>
+          </div>
+        
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </header>
+  <nav id="repo-tabs" class="aui-navgroup aui-navgroup-horizontal aui-navgroup-horizontal-roomy">
+    <div class="aui-navgroup-inner">
+      <div class="aui-navgroup-primary">
+        <ul class="aui-nav">
+          
+            <li class="aui-nav-selected">
+              <a href="/birkenfeld/sphinx-contrib/overview" id="repo-overview-link">Overview</a>
+            </li>
+          
+          
+            <li>
+              <a href="/birkenfeld/sphinx-contrib/src" id="repo-source-link">Source</a>
+            </li>
+          
+          
+            <li>
+              <a href="/birkenfeld/sphinx-contrib/commits" id="repo-commits-link">
+                Commits
+              </a>
+            </li>
+          
+          
+            <li>
+              <a href="/birkenfeld/sphinx-contrib/branches" id="repo-branches-link">
+                Branches
+              </a>
+            </li>
+          
+          
+            <li>
+              <a href="/birkenfeld/sphinx-contrib/pull-requests" id="repo-pullrequests-link">
+                Pull requests
+                
+                  
+                    <span class="aui-badge" title="6 open pull requests" id="pullrequest-count">6</span>
+                  
+                
+              </a>
+            </li>
+          
+          
+            
+          
+            <li id="issues-tab" class="
+              
+                
+              
+            ">
+              <a href="/birkenfeld/sphinx-contrib/issues?status=new&amp;status=open" id="repo-issues-link">
+                Issues
+                
+                  
+                    <span class="aui-badge">23</span>
+                  
+                
+              </a>
+            </li>
+            <li id="wiki-tab" class="
+                
+                  
+                
+              ">
+              <a href="/birkenfeld/sphinx-contrib/wiki" id="repo-wiki-link">Wiki</a>
+            </li>
+          
+            <li>
+            <a href="/birkenfeld/sphinx-contrib/downloads" id="repo-downloads-link">
+              Downloads
+              
+                
+              
+            </a>
+            </li>
+          
+        </ul>
+      </div>
+      <div class="aui-navgroup-secondary">
+        <ul class="aui-nav">
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+    <div id="content" role="main">
+      
+  <div id="repo-content">
+    
+  <div id="repo-overview" data-modules="components/mathjax">
+  
+    
+      <div class="column">
+        
+          
+<section class="bb-banner" id="signup-banner">
+  <div>
+    <p>
+      
+        Bitbucket is a code hosting site with unlimited public and private
+        repositories.  We're also free for small teams!
+      
+    </p>
+    <a class="aui-button aui-button-primary aui-style signup-button" href="/account/signup/">Sign up for free</a>
+    <span class="close aui-icon aui-icon-small aui-iconfont-close-dialog" title="Dismiss this banner">Close</span>
+  </div>
+</section>
+
+        
+        
+          
+            
+              <section id="readme">
+                
+                  <article class="readme file">
+                    <h1 class="title">README for sphinx-contrib</h1>
+<p>This repository contains a collection of <a class="reference external" href="http://bitbucket.org/birkenfeld/sphinx">Sphinx</a> extensions maintained by
+their respective authors.  It is not an official part of Sphinx.</p>
+<div class="section" id="rst-header-installing">
+<h2>Installing</h2>
+<p>Use <tt class="docutils literal">setup.py</tt> in the subdirectory for the individual extension:</p>
+<pre class="literal-block">
+cd dir
+python setup.py build
+sudo python setup.py install
+</pre>
+</div>
+<div class="section" id="rst-header-contributing">
+<h2>Contributing</h2>
+<p>If you want to add your own extension, please write an e-mail to
+<a class="reference external" href="mailto:georg&#37;&#52;&#48;python&#46;org">georg<span>&#64;</span>python<span>&#46;</span>org</a> and give your bitbucket user name; you will then
+get write access to the public repo at
+<a class="reference external" href="http://bitbucket.org/birkenfeld/sphinx-contrib">http://bitbucket.org/birkenfeld/sphinx-contrib</a>.</p>
+<p>Send wishes, comments, patches, etc. for individual extensions
+to their author as given in the module.</p>
+</div>
+<div class="section" id="rst-header-list-of-extensions">
+<h2>List of extensions</h2>
+<ul class="simple">
+<li>aafig: render embedded ASCII art as nice images using <a class="reference external" href="https://launchpad.net/aafigure">aafigure</a>.</li>
+<li>actdiag: embed activity diagrams by using <a class="reference external" href="http://blockdiag.com/">actdiag</a></li>
+<li>adadomain: an extension for Ada support (Sphinx 1.0 needed)</li>
+<li>ansi: parse ANSI color sequences inside documents</li>
+<li>autorun: Execute code in a <tt class="docutils literal">runblock</tt> directive.</li>
+<li>blockdiag: embed block diagrams by using <a class="reference external" href="http://blockdiag.com/">blockdiag</a></li>
+<li>cheeseshop: easily link to PyPI packages</li>
+<li>clearquest: create tables from <a class="reference external" href="http://www-01.ibm.com/software/awdtools/clearquest/">ClearQuest</a> queries.</li>
+<li><a class="reference external" href="http://bitbucket.org/klorenz/sphinxcontrib-cmakedomain">cmakedomain</a>: a domain for <a class="reference external" href="http://cmake.org">CMake</a></li>
+<li>coffeedomain: a domain for (auto)documenting CoffeeScript source code.</li>
+<li>context: a builder for ConTeXt.</li>
+<li>doxylink: Link to external Doxygen-generated HTML documentation</li>
+<li><a class="reference external" href="http://bitbucket.org/klorenz/sphinxcontrib-domaintools">domaintools</a>: A tool for easy domain creation.</li>
+<li>email: obfuscate email addresses</li>
+<li>erlangdomain: an extension for Erlang support (Sphinx 1.0 needed)</li>
+<li>exceltable: embed Excel spreadsheets into documents using <a class="reference external" href="http://packages.python.org/sphinxcontrib-exceltable/">exceltable</a></li>
+<li>feed: an extension for creating syndication feeds and time-based overviews
+from your site content</li>
+<li><a class="reference external" href="http://bitbucket.org/klorenz/sphinxcontrib-findanything">findanything</a>: an extension to add Sublime Text 2-like findanything panels
+to your documentation to find pages, sections and index entries while typing</li>
+<li>gnuplot: produces images using <a class="reference external" href="http://www.gnuplot.info/">gnuplot</a> language.</li>
+<li>googleanalytics: track web visitor statistics by using <a class="reference external" href="http://www.google.com/analytics/">Google Analytics</a></li>
+<li>googlechart: embed charts by using <a class="reference external" href="https://developers.google.com/chart/">Google Chart</a></li>
+<li>googlemaps: embed maps by using <a class="reference external" href="http://maps.google.com/">Google Maps</a></li>
+<li>httpdomain: a domain for documenting RESTful HTTP APIs.</li>
+<li>hyphenator: client-side hyphenation of HTML using <a class="reference external" href="http://code.google.com/p/hyphenator/">hyphenator</a></li>
+<li><a class="reference external" href="http://sphinxcontrib-inlinesyntaxhighlight.readthedocs.org">inlinesyntaxhighlight</a>: inline syntax highlighting</li>
+<li>lassodomain: a domain for documenting <a class="reference external" href="http://www.lassosoft.com/">Lasso</a> source code</li>
+<li>lilypond: an extension inserting music scripts from <a class="reference external" href="http://lilypond.org/web/">Lilypond</a> in PNG format.</li>
+<li><a class="reference external" href="http://bitbucket.org/klorenz/sphinxcontrib-makedomain">makedomain</a>: a domain for <a class="reference external" href="http://www.gnu.org/software/make/">GNU Make</a></li>
+<li>matlabdomain: document <a class="reference external" href="http://www.mathworks.com/products/matlab/">MATLAB</a> code.</li>
+<li>mockautodoc: mock imports.</li>
+<li>mscgen: embed mscgen-formatted MSC (Message Sequence Chart)s.</li>
+<li>napoleon: supports <a class="reference external" href="http://google-styleguide.googlecode.com/svn/trunk/pyguide.html">Google style</a> and <a class="reference external" href="https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt">NumPy style</a> docstrings.</li>
+<li>nicoviceo: embed videos from nicovideo</li>
+<li>nwdiag: embed network diagrams by using <a class="reference external" href="http://blockdiag.com/">nwdiag</a></li>
+<li>omegat: support tools to collaborate with <a class="reference external" href="http://www.omegat.org/">OmegaT</a> (Sphinx 1.1 needed)</li>
+<li>osaka: convert standard Japanese doc to Osaka dialect (it is joke extension)</li>
+<li>paverutils: an alternate integration of Sphinx with <a class="reference external" href="http://www.blueskyonmars.com/projects/paver/">Paver</a>.</li>
+<li>phpdomain: an extension for PHP support</li>
+<li>plantuml: embed UML diagram by using <a class="reference external" href="http://plantuml.sourceforge.net/">PlantUML</a></li>
+<li>rawfiles: copy raw files, like a CNAME.</li>
+<li>requirements: declare requirements wherever you need (e.g. in test
+docstrings), mark statuses and collect them in a single list</li>
+<li>restbuilder: a builder for reST (reStructuredText) files.</li>
+<li>rubydomain: an extension for Ruby support (Sphinx 1.0 needed)</li>
+<li>sadisplay: display SqlAlchemy model <a class="reference external" href="http://bitbucket.org/estin/sadisplay/wiki/Home">sadisplay</a></li>
+<li>sdedit: an extension inserting sequence diagram by using Quick Sequence
+Diagram Editor (<a class="reference external" href="http://sdedit.sourceforge.net/">sdedit</a>)</li>
+<li>seqdiag: embed sequence diagrams by using <a class="reference external" href="http://blockdiag.com/">seqdiag</a></li>
+<li>slide: embed presentation slides on <a class="reference external" href="http://www.slideshare.net/">slideshare</a> and other sites.</li>
+<li><a class="reference external" href="http://bitbucket.org/klorenz/sphinxcontrib-swf">swf</a>: embed flash files</li>
+<li>sword: an extension inserting Bible verses from <a class="reference external" href="http://www.crosswire.org/sword/">Sword</a>.</li>
+<li>tikz: draw pictures with the <a class="reference external" href="http://sourceforge.net/projects/pgf/">TikZ/PGF LaTeX package</a>.</li>
+<li>traclinks: create <a class="reference external" href="http://trac.edgewall.org/wiki/TracLinks">TracLinks</a> to a <a class="reference external" href="http://trac.edgewall.org">Trac</a> instance from within Sphinx</li>
+<li>whooshindex: whoosh indexer extension</li>
+<li>youtube: embed videos from <a class="reference external" href="http://www.youtube.com/">YouTube</a></li>
+<li>zopeext: provide an <tt class="docutils literal">autointerface</tt> directive for using <a class="reference external" href="http://docs.zope.org/zope.interface/README.html">Zope interfaces</a>.</li>
+</ul>
+</div>
+<div class="section" id="rst-header-for-contributors">
+<h2>For contributors</h2>
+<p>When adding or updating your extension, please adhere to these guidelines:</p>
+<ul class="simple">
+<li>Use <tt class="docutils literal"><span class="pre">make-ext.py</span></tt> to set up your extension subdirectory.</li>
+<li>Each extension must be either a submodule or subpackage of the
+<tt class="docutils literal">sphinxcontrib</tt> package.  The <tt class="docutils literal">sphinxcontrib/__init__.py</tt> file in your
+package must not be changed.</li>
+<li>Each extension must be listed in this file under &quot;List of extensions&quot; above.</li>
+<li>Each author should be listed in <tt class="docutils literal">AUTHORS</tt> along with the extension name.</li>
+<li>It would be good to have all extensions BSD licensed; otherwise make a note in
+an <tt class="docutils literal">ext/LICENSE</tt> file.</li>
+<li>Each extension can maintain a changelog and readme file; these files should
+be called <tt class="docutils literal">ext/CHANGES</tt> and <tt class="docutils literal">ext/README.rst</tt>, respectively.</li>
+</ul>
+</div>
+
+                  </article>
+                
+              </section>
+            
+          
+        
+        <section id="repo-activity">
+          <h1>
+            Recent activity
+            
+              <a href="/birkenfeld/sphinx-contrib/rss">
+                <span class="aui-icon aui-icon-small aui-iconfont-rss rss-icon"></span>
+              </a>
+            
+          </h1>
+          
+            
+              
+                
+
+
+   
+
+
+<div class="newsfeed">
+  
+    
+      
+        
+          
+            
+            
+            
+              
+                
+                  
+
+            <article class="news-item pullrequest_fulfilled">
+              <span class="icon pullrequest_fulfilled"></span>
+              
+
+
+  <a href="/dahlia"><img alt="Hong Minhee" src="https://secure.gravatar.com/avatar/f0d32b762b34cfc337c9fba03bc3ced4?d=https%3A%2F%2Fd3oaxc4q5k2d6q.cloudfront.net%2Fm%2F965d93c157b4%2Fimg%2Fdefault_avatar%2F32%2Fuser_blue.png&amp;s=32" class="avatar avatar32" /></a>
+
+
+              
+              
+              <p>
+
+  <a href="/dahlia">Hong Minhee</a>
+ merged  <a href="/birkenfeld/sphinx-contrib/pull-request/43/should-be-json-instead-of-json-didnt-sync">pull request #43</a> for 
+
+
+<a href="/birkenfeld/sphinx-contrib" title="birkenfeld/sphinx-contrib">birkenfeld/sphinx-contrib</a>
+
+</p>
+              <time datetime="2013-11-01T17:59:47+00:00">2013-11-01</time>
+              <p class="additional-info">should be JSON instead of Json, didn&#39;t sync code for last PR</p>
+              
+    
+    
+
+                
+              
+            
+          
+          
+        
+      
+    
+  
+    
+      
+        
+          
+            
+              </article>
+            
+            
+            
+              
+                
+            
+              <article class="news-item commit">
+                <span class="icon commit"></span>
+                
+
+
+  <a href="/dahlia"><img alt="Hong Minhee" src="https://secure.gravatar.com/avatar/f0d32b762b34cfc337c9fba03bc3ced4?d=https%3A%2F%2Fd3oaxc4q5k2d6q.cloudfront.net%2Fm%2F965d93c157b4%2Fimg%2Fdefault_avatar%2F32%2Fuser_blue.png&amp;s=32" class="avatar avatar32" /></a>
+
+
+                <p>
+                  
+
+  <a href="/dahlia">Hong Minhee</a>
+
+                  pushed 2 commits to 
+
+
+<a href="/birkenfeld/sphinx-contrib" title="birkenfeld/sphinx-contrib">birkenfeld/sphinx-contrib</a>
+
+
+                </p>
+                <time datetime="2013-11-01T17:59:45+00:00">2013-11-01</time>
+                
+                  <div class="changeset">
+                  <a href="/birkenfeld/sphinx-contrib/commits/dc99bd08ef54d09be5be8bf6f7692a7fa310778c" class="changeset-hash">dc99bd0</a>
+                  -
+                  
+                    
+                      Merged in kienpham2000/sphinx-contrib/kienpham2000/should-be-json-instead-of-json-didnt-syn-<a href="https://bitbucket.org/birkenfeld/sphinx-contrib/commits/1383328667620" rel="nofollow"  >1383328667620</a> (<a href="https://bitbucket.org/birkenfeld/sphinx-contrib/pull-request/43/should-be-json-instead-of-json-didnt-sync" rel="nofollow"  >pull request #43</a>)
+                    
+                  
+                  </div>
+                
+                  <div class="changeset">
+                  <a href="/birkenfeld/sphinx-contrib/commits/481aa19614fdb2030bdcb05fe54f3c58e7833ed5" class="changeset-hash">481aa19</a>
+                  -
+                  
+                    
+                      should be JSON instead of Json, didn&#39;t sync code for last PR
+                    
+                  
+                  </div>
+                
+                
+              </article>
+            
+
+              
+            
+          
+          
+        
+      
+    
+  
+    
+      
+        
+          
+            
+              </article>
+            
+            
+            
+              
+                
+                  
+
+            <article class="news-item pullrequest_like">
+              <span class="icon pullrequest_like"></span>
+              
+
+
+  <a href="/dahlia"><img alt="Hong Minhee" src="https://secure.gravatar.com/avatar/f0d32b762b34cfc337c9fba03bc3ced4?d=https%3A%2F%2Fd3oaxc4q5k2d6q.cloudfront.net%2Fm%2F965d93c157b4%2Fimg%2Fdefault_avatar%2F32%2Fuser_blue.png&amp;s=32" class="avatar avatar32" /></a>
+
+
+              
+              
+              <p>
+
+  <a href="/dahlia">Hong Minhee</a>
+ approved <a href="/birkenfeld/sphinx-contrib/pull-request/43/should-be-json-instead-of-json-didnt-sync">pull request #43</a> in 
+
+
+<a href="/birkenfeld/sphinx-contrib" title="birkenfeld/sphinx-contrib">birkenfeld/sphinx-contrib</a>
+
+</p>
+              
+    
+    
+              <time datetime="2013-11-01T17:59:43+00:00">2013-11-01</time>
+    
+
+                
+              
+            
+          
+          
+        
+      
+    
+  
+    
+      
+        
+          
+            
+              </article>
+            
+            
+            
+              
+                
+                  
+
+            <article class="news-item pullrequest_comment_created">
+              <span class="icon pullrequest_comment_created"></span>
+              
+
+
+  <a href="/kienpham2000"><img alt="kienpham2000" src="https://secure.gravatar.com/avatar/1d5ceb72a54ffc6ef2a6d3145308224b?d=https%3A%2F%2Fd3oaxc4q5k2d6q.cloudfront.net%2Fm%2F965d93c157b4%2Fimg%2Fdefault_avatar%2F32%2Fuser_blue.png&amp;s=32" class="avatar avatar32" /></a>
+
+
+              
+              
+              <p>
+
+  <a href="/kienpham2000">kienpham2000</a>
+ commented on <a href="/birkenfeld/sphinx-contrib/pull-request/42/it-should-be-json-instead-of-json#comment-761727">pull request #42</a> in 
+
+
+<a href="/birkenfeld/sphinx-contrib" title="birkenfeld/sphinx-contrib">birkenfeld/sphinx-contrib</a>
+
+</p>
+              
+    
+    
+              <time datetime="2013-11-01T17:59:31+00:00">2013-11-01</time>
+    
+
+                
+              
+            
+          
+          
+        
+      
+    
+  
+    
+      
+        
+          
+            
+              </article>
+            
+            
+            
+              
+                
+                  
+
+            <article class="news-item pullrequest_created">
+              <span class="icon pullrequest_created"></span>
+              
+
+
+  <a href="/kienpham2000"><img alt="kienpham2000" src="https://secure.gravatar.com/avatar/1d5ceb72a54ffc6ef2a6d3145308224b?d=https%3A%2F%2Fd3oaxc4q5k2d6q.cloudfront.net%2Fm%2F965d93c157b4%2Fimg%2Fdefault_avatar%2F32%2Fuser_blue.png&amp;s=32" class="avatar avatar32" /></a>
+
+
+              
+              
+              <p>
+
+  <a href="/kienpham2000">kienpham2000</a>
+ created <a href="/birkenfeld/sphinx-contrib/pull-request/43/should-be-json-instead-of-json-didnt-sync">pull request #43</a> for 
+
+
+<a href="/birkenfeld/sphinx-contrib" title="birkenfeld/sphinx-contrib">birkenfeld/sphinx-contrib</a>
+
+</p>
+              <time datetime="2013-11-01T17:58:39+00:00">2013-11-01</time>
+              <p class="additional-info">should be JSON instead of Json, didn&#39;t sync code for last PR</p>
+              
+    
+    
+
+                
+              
+            
+          
+          
+        
+      
+    
+  
+    
+      
+        
+          
+            
+              </article>
+            
+            
+            
+              
+                
+                  
+
+            <article class="news-item pullrequest_comment_created">
+              <span class="icon pullrequest_comment_created"></span>
+              
+
+
+  <a href="/dahlia"><img alt="Hong Minhee" src="https://secure.gravatar.com/avatar/f0d32b762b34cfc337c9fba03bc3ced4?d=https%3A%2F%2Fd3oaxc4q5k2d6q.cloudfront.net%2Fm%2F965d93c157b4%2Fimg%2Fdefault_avatar%2F32%2Fuser_blue.png&amp;s=32" class="avatar avatar32" /></a>
+
+
+              
+              
+              <p>
+
+  <a href="/dahlia">Hong Minhee</a>
+ commented on <a href="/birkenfeld/sphinx-contrib/pull-request/42/it-should-be-json-instead-of-json#comment-761709">pull request #42</a> in 
+
+
+<a href="/birkenfeld/sphinx-contrib" title="birkenfeld/sphinx-contrib">birkenfeld/sphinx-contrib</a>
+
+</p>
+              
+    
+    
+              <time datetime="2013-11-01T17:55:56+00:00">2013-11-01</time>
+    
+
+                
+              
+            
+          
+          
+        
+      
+    
+  
+    
+      
+        
+          
+            
+              </article>
+            
+            
+            
+              
+                
+                  
+
+            <article class="news-item pullrequest_like">
+              <span class="icon pullrequest_like"></span>
+              
+
+
+  <a href="/dahlia"><img alt="Hong Minhee" src="https://secure.gravatar.com/avatar/f0d32b762b34cfc337c9fba03bc3ced4?d=https%3A%2F%2Fd3oaxc4q5k2d6q.cloudfront.net%2Fm%2F965d93c157b4%2Fimg%2Fdefault_avatar%2F32%2Fuser_blue.png&amp;s=32" class="avatar avatar32" /></a>
+
+
+              
+              
+              <p>
+
+  <a href="/dahlia">Hong Minhee</a>
+ approved <a href="/birkenfeld/sphinx-contrib/pull-request/42/it-should-be-json-instead-of-json">pull request #42</a> in 
+
+
+<a href="/birkenfeld/sphinx-contrib" title="birkenfeld/sphinx-contrib">birkenfeld/sphinx-contrib</a>
+
+</p>
+              
+    
+    
+              <time datetime="2013-11-01T17:54:30+00:00">2013-11-01</time>
+    
+
+                
+              
+            
+          
+          
+        
+      
+    
+  
+    
+      
+        
+          
+            
+              </article>
+            
+            
+            
+              
+                
+                  
+
+            <article class="news-item pullrequest_rejected">
+              <span class="icon pullrequest_rejected"></span>
+              
+
+
+  <a href="/kienpham2000"><img alt="kienpham2000" src="https://secure.gravatar.com/avatar/1d5ceb72a54ffc6ef2a6d3145308224b?d=https%3A%2F%2Fd3oaxc4q5k2d6q.cloudfront.net%2Fm%2F965d93c157b4%2Fimg%2Fdefault_avatar%2F32%2Fuser_blue.png&amp;s=32" class="avatar avatar32" /></a>
+
+
+              
+              
+              <p>
+
+  <a href="/kienpham2000">kienpham2000</a>
+ rejected <a href="/birkenfeld/sphinx-contrib/pull-request/42/it-should-be-json-instead-of-json">pull request #42</a> for 
+
+
+<a href="/birkenfeld/sphinx-contrib" title="birkenfeld/sphinx-contrib">birkenfeld/sphinx-contrib</a>
+
+</p>
+              <time datetime="2013-11-01T17:54:25+00:00">2013-11-01</time>
+              <p class="additional-info">it should be JSON instead of Json</p>
+              
+    
+    
+
+                
+              
+            
+          
+          
+        
+      
+    
+  
+    
+      
+        
+          
+            
+              </article>
+            
+            
+            
+              
+                
+                  
+
+            <article class="news-item pullrequest_created">
+              <span class="icon pullrequest_created"></span>
+              
+
+
+  <a href="/kienpham2000"><img alt="kienpham2000" src="https://secure.gravatar.com/avatar/1d5ceb72a54ffc6ef2a6d3145308224b?d=https%3A%2F%2Fd3oaxc4q5k2d6q.cloudfront.net%2Fm%2F965d93c157b4%2Fimg%2Fdefault_avatar%2F32%2Fuser_blue.png&amp;s=32" class="avatar avatar32" /></a>
+
+
+              
+              
+              <p>
+
+  <a href="/kienpham2000">kienpham2000</a>
+ created <a href="/birkenfeld/sphinx-contrib/pull-request/42/it-should-be-json-instead-of-json">pull request #42</a> for 
+
+
+<a href="/birkenfeld/sphinx-contrib" title="birkenfeld/sphinx-contrib">birkenfeld/sphinx-contrib</a>
+
+</p>
+              <time datetime="2013-11-01T17:53:19+00:00">2013-11-01</time>
+              <p class="additional-info">it should be JSON instead of Json</p>
+              
+    
+    
+
+                
+              
+            
+          
+          
+        
+      
+    
+  
+    
+      
+        
+          
+            
+              </article>
+            
+            
+            
+              
+                
+            
+              <article class="news-item commit">
+                <span class="icon commit"></span>
+                
+
+
+  <a href="/dahlia"><img alt="Hong Minhee" src="https://secure.gravatar.com/avatar/f0d32b762b34cfc337c9fba03bc3ced4?d=https%3A%2F%2Fd3oaxc4q5k2d6q.cloudfront.net%2Fm%2F965d93c157b4%2Fimg%2Fdefault_avatar%2F32%2Fuser_blue.png&amp;s=32" class="avatar avatar32" /></a>
+
+
+                <p>
+                  
+
+  <a href="/dahlia">Hong Minhee</a>
+
+                  pushed 1 commit to 
+
+
+<a href="/birkenfeld/sphinx-contrib" title="birkenfeld/sphinx-contrib">birkenfeld/sphinx-contrib</a>
+
+
+                </p>
+                <time datetime="2013-11-01T17:48:54+00:00">2013-11-01</time>
+                
+                  <div class="changeset">
+                  <a href="/birkenfeld/sphinx-contrib/commits/9d38602c2e34d3a4b5086dab7a5dc727da90ed35" class="changeset-hash">9d38602</a>
+                  -
+                  
+                    
+                      Changelog for <a href="https://bitbucket.org/birkenfeld/sphinx-contrib/pull-request/41/fix-compatibility-for-26" rel="nofollow"  >pull request #41</a>
+                    
+                  
+                  </div>
+                
+                
+              </article>
+            
+
+              
+            
+          
+          
+            </article>
+          
+        
+      
+    
+  
+</div>
+
+
+
+
+              
+            
+          
+        </section>
+      </div>
+
+      <div class="column">
+        
+
+
+
+        <section id="repo-stats">
+          
+<div class="clone-url">
+  <div class="aui-buttons">
+    <a href="https://bitbucket.org/birkenfeld/sphinx-contrib"
+       class="aui-button aui-style aui-dropdown2-trigger" aria-haspopup="true"
+       aria-owns="clone-url-dropdown-overview">
+      <span class="dropdown-text">HTTPS</span>
+    </a>
+    <div id="clone-url-dropdown-overview" class="aui-dropdown2 aui-style-default">
+      <ul class="aui-list-truncate">
+        <li>
+          <a href="https://bitbucket.org/birkenfeld/sphinx-contrib"
+            
+              data-command="https://bitbucket.org/birkenfeld/sphinx-contrib"
+            
+            class="item-link https">HTTPS
+          </a>
+        </li>
+        <li>
+          <a href="ssh://hg@bitbucket.org/birkenfeld/sphinx-contrib"
+            
+              data-command="ssh://hg@bitbucket.org/birkenfeld/sphinx-contrib"
+            
+            class="item-link ssh">SSH
+          </a>
+        </li>
+      </ul>
+    </div>
+    <input type="text" readonly="readonly" value="https://bitbucket.org/birkenfeld/sphinx-contrib">
+  </div>
+  
+</div>
+
+
+          <ul class="stats">
+            
+              <li class="branches">
+                <a href="#branches" id="branches-dialog-trigger"
+                   data-url="/api/1.0/repositories/birkenfeld/sphinx-contrib/branches-tags"
+                   data-template="branches-overview-template">
+                  <span class="aui-icon aui-icon-large aui-iconfont-devtools-branch"></span>
+                  
+                    
+                      <span class="value">1</span> Branch
+                    
+                  
+                </a>
+              </li>
+              <li class="tags">
+                <a href="#tags" id="tags-dialog-trigger"
+                   data-url="/api/1.0/repositories/birkenfeld/sphinx-contrib/branches-tags"
+                   data-template="tags-overview-template">
+                  <span class="aui-icon aui-icon-large aui-iconfont-devtools-tag"></span>
+                  
+                    
+                      <span class="value">99+</span> Tags
+                    
+                  
+                </a>
+              </li>
+              <li class="forks">
+                <a href="#forks" id="forks-dialog-trigger"
+                   data-url="/api/1.0/repositories/birkenfeld/sphinx-contrib/forks"
+                   data-template="forks-overview-template">
+                  <span class="aui-icon aui-icon-large aui-iconfont-devtools-fork"></span>
+                  
+                    <span class="value">82</span> Forks
+                  
+                </a>
+              </li>
+            
+            <li class="followers">
+              <a href="#followers" id="followers-dialog-trigger"
+                  data-url="/api/1.0/repositories/birkenfeld/sphinx-contrib/followers"
+                  data-template="watchers-overview-template">
+                <span class="aui-icon aui-icon-large aui-iconfont-star"></span>
+                
+                  <span class="value">128</span> Watchers
+                
+              </a>
+            </li>
+          </ul>
+
+          <script id="branches-overview-template" type="text/html">
+  
+
+<div class="tabbed-filter-widget repo-stats-dialog branches" id="branches-dialog">
+  <div class="tabbed-filter">
+    <input placeholder="Filter branches" class="filter-box" autosave="branch-dropdown-11893" type="text">
+  </div>
+  <div class="tab-pane active-pane branches" id="branch-list">
+    <ol class="filter-list[[^branches]] empty[[/branches]]">
+      <li class="empty-msg">No matching branches</li>
+      [[#branches]]
+        <li class="comprev filter-item">
+          <a href="/birkenfeld/sphinx-contrib/branch/[[encodedName]]" title="View details for [[name]]">[[name]]</a>
+        </li>
+      [[/branches]]
+    </ol>
+  </div>
+</div>
+
+</script>
+          <script id="tags-overview-template" type="text/html">
+  
+
+<div class="tabbed-filter-widget repo-stats-dialog tags" id="tags-dialog">
+    <div class="tabbed-filter">
+      <input placeholder="Filter tags" class="filter-box" autosave="tag-dropdown-11893" type="text">
+    </div>
+    <div class="tab-pane active-pane tags" id="tag-list">
+    <ol class="filter-list[[^tags]] empty[[/tags]]">
+      <li class="empty-msg">No matching tags</li>
+      [[#tags]]
+        <li class="comprev filter-item">
+          <a href="/birkenfeld/sphinx-contrib/commits/tag/[[encodedName]]" title="Browse source of [[name]]">[[name]]</a>
+            <a rel="nofollow" class="compare"
+               href="/birkenfeld/sphinx-contrib/compare/[[encodedName]].."
+               title="Show changes between [[name]] and the main branch.">Compare</a>
+        </li>
+      [[/tags]]
+    </ol>
+  </div>
+</div>
+
+</script>
+          <script id="forks-overview-template" type="text/html">
+  
+
+<div class="tabbed-filter-widget repo-stats-dialog forks" id="forks-dialog">
+    <div class="tabbed-filter">
+      <input placeholder="Filter forks" class="filter-box" autosave="fork-dropdown-11893" type="text">
+    </div>
+    <div class="tab-pane active-pane forks" id="fork-list">
+    <ol class="filter-list[[^forks]] empty[[/forks]]">
+      <li class="empty-msg">No matching forks</li>
+      [[#forks]]
+        <li class="comprev filter-item">
+          <a href="/[[owner.username]]/[[slug]]" title="[[owner.username]]/[[slug]]">[[owner.username]]/[[slug]]</a>
+            <a rel="nofollow" class="compare"
+               href="/birkenfeld/sphinx-contrib/compare/[[owner.username]]/[[slug]].."
+               title="Show changes between [[owner.username]]/[[slug]] and this repository.">Compare</a>
+        </li>
+      [[/forks]]
+    </ol>
+  </div>
+</div>
+
+</script>
+          <script id="watchers-overview-template" type="text/html">
+  
+
+<div class="followers-dialog repo-stats-dialog" id="followers-dialog">
+  <div id="followers-list" class="followers-list">
+    <ol[[^followers]] class="empty"[[/followers]]>
+      <li class="empty-msg">No watchers yet</li>
+      [[#followers]]
+        <li>
+          <a href="/[[username]]" title="[[display_name]]">
+            <img alt="[[username]]" src="[[avatar]]" class="avatar avatar32" />
+          </a>
+        </li>
+      [[/followers]]
+    </ol>
+  </div>
+</div>
+</script>
+
+          <dl class="metadata">
+            <dt>Owner</dt>
+            <dd><a href="/birkenfeld">Georg Brandl</a></dd>
+
+            
+              <dt>Website</dt>
+              <dd><a href="http://sphinx.pocoo.org/" rel="nofollow">http://sphinx.pocoo.…</a></dd>
+            
+
+            <dt>Access level</dt>
+            <dd>Public</dd>
+
+            <dt>Type</dt>
+            <dd>Mercurial</dd>
+
+            
+
+            <dt>Last updated</dt>
+            <dd><time datetime="2013-11-01T18:59:45.755580">2013-11-01</time></dd>
+
+            <dt>Created</dt>
+            <dd><time datetime="2009-05-17T16:53:42.978046">2009-05-17</time></dd>
+
+            <dt>Size</dt>
+            <dd>
+              3.0 MB
+              <a rel="nofollow"
+              
+                  href="/birkenfeld/sphinx-contrib/get/dc99bd08ef54.zip"
+                
+              >(download)</a>
+            </dd>
+            
+              
+            
+          </dl>
+        </section>
+        
+          
+            
+          
+        
+      </div>
+      <div class="clearfix"></div>
+    
+    
+  </div>
+
+  
+
+  </div>
+  
+
+<form id="file-search-form" action="#"
+  
+  
+  >
+  <input type="text" id="file-search-query" class="loading">
+  <div id="filtered-files"></div>
+  <div class="tip"><em>Tip:</em> Filter by directory path e.g. <strong>/media app.js</strong> to search for public<strong>/media/app.js</strong>.</div>
+  <div class="tip"><em>Tip:</em> Use camelCasing e.g. <strong>ProjME</strong> to search for <strong>ProjectModifiedE</strong>vent.java.</div>
+  <div class="tip"><em>Tip:</em> Filter by extension type e.g. <strong>/repo .js</strong> to search for all <strong>.js</strong> files in the <strong>/repo</strong> directory.</div>
+  <div class="tip"><em>Tip:</em> Separate your search with spaces e.g. <strong>/ssh pom.xml</strong> to search for src<strong>/ssh/pom.xml</strong>.</div>
+  <div class="tip"><em>Tip:</em> Use ↑ and ↓ arrow keys to navigate and <strong>return</strong> to view the file.</div>
+  <div class="tip mod-osx"><em>Tip:</em> You can also navigate files with <strong>Ctrl+j</strong> <em>(next)</em> and <strong>Ctrl+k</strong> <em>(previous)</em> and view the file with <strong>Ctrl+o</strong>.</div>
+  <div class="tip mod-win"><em>Tip:</em> You can also navigate files with <strong>Alt+j</strong> <em>(next)</em> and <strong>Alt+k</strong> <em>(previous)</em> and view the file with <strong>Alt+o</strong>.</div>
+  <script id="filtered-files-template" type="text/html">
+  
+
+<table class="aui bb-list">
+  <thead>
+    <tr class="assistive">
+      <th class="name">Filename</th>
+    </tr>
+  </thead>
+  <tbody>
+    [[#files]]
+    <tr class="iterable-item">
+      <td class="name [[#isDirectory]]directory[[/isDirectory]]">
+        <span class="aui-icon aui-icon-small[[#isDirectory]] aui-iconfont-devtools-folder-closed[[/isDirectory]][[^isDirectory]] aui-iconfont-devtools-file[[/isDirectory]]"></span>
+        <a href="/birkenfeld/sphinx-contrib/src/[[node]]/[[name]][[#branch]]?at=[[branch]][[/branch]]"
+           title="[[name]]" class="execute" tabindex="-1">
+          [[&highlightedName]]
+        </a>
+      </td>
+    </tr>
+    [[/files]]
+  </tbody>
+</table>
+
+</script>
+</form>
+
+
+    </div>
+  </div>
+
+  <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+      
+  <ul>
+    <li>
+      <a class="support-ga" target="_blank"
+           data-support-gaq-page="Blog"
+           href="http://blog.bitbucket.org">Blog</a>
+    </li>
+    <li>
+      <a class="support-ga" target="_blank"
+           data-support-gaq-page="Home"
+           href="/support">Support</a>
+    </li>
+    <li>
+      <a class="support-ga"
+           data-support-gaq-page="PlansPricing"
+           href="/plans">Plans &amp; pricing</a>
+    </li>
+    <li>
+      <a class="support-ga" target="_blank"
+           data-support-gaq-page="DocumentationHome"
+           href="//confluence.atlassian.com/display/BITBUCKET">Documentation</a>
+    </li>
+    <li>
+      <a class="support-ga" target="_blank"
+           data-support-gaq-page="DocumentationAPI"
+           href="//confluence.atlassian.com/x/IYBGDQ">API</a>
+    </li>
+    <li>
+      <a class="support-ga" target="_blank"
+           data-support-gaq-page="SiteStatus"
+           href="http://status.bitbucket.org/">Server status</a>
+    </li>
+    <li>
+      <a class="support-ga" id="meta-info"
+           data-support-gaq-page="MetaInfo"
+           href="#">Version info</a>
+    </li>
+    <li>
+      <a class="support-ga" target="_blank"
+           data-support-gaq-page="EndUserAgreement"
+           href="//www.atlassian.com/end-user-agreement?utm_source=bitbucket&amp;utm_medium=link&amp;utm_campaign=footer">Terms of service</a>
+    </li>
+    <li>
+      <a class="support-ga" target="_blank"
+           data-support-gaq-page="PrivacyPolicy"
+           href="//www.atlassian.com/company/privacy?utm_source=bitbucket&amp;utm_medium=link&amp;utm_campaign=footer">Privacy policy</a>
+    </li>
+  </ul>
+  <div id="meta-info-content" style="display: none;">
+    <ul>
+      
+        
+          <li>English</li>
+        
+      
+      <li>
+        <a class="support-ga" target="_blank"
+           data-support-gaq-page="GitDocumentation"
+           href="http://git-scm.com/">Git 1.8.4.2</a>
+      </li>
+      <li>
+        <a class="support-ga" target="_blank"
+           data-support-gaq-page="HgDocumentation"
+           href="http://mercurial.selenic.com/">Mercurial 2.2.2</a>
+      </li>
+      <li>
+        <a class="support-ga" target="_blank"
+           data-support-gaq-page="DjangoDocumentation"
+           href="https://www.djangoproject.com/">Django 1.4.6</a>
+      </li>
+      <li>
+        <a class="support-ga" target="_blank"
+           data-support-gaq-page="PythonDocumentation"
+           href="http://www.python.org/">Python 2.7.3</a>
+      </li>
+      <li>
+        <a class="support-ga" target="_blank"
+           data-support-gaq-page="DeployedVersion"
+           href="#">82a82ff021d2 / 965d93c157b4 @ app08</a>
+      </li>
+    </ul>
+  </div>
+  <ul class="atlassian-links">
+    <li>
+      <a id="atlassian-jira-link" target="_blank" title="Track everything – bugs, tasks, deadlines, code – and pull reports to stay informed."
+         href="http://www.atlassian.com/software/jira?utm_source=bitbucket&amp;utm_medium=link&amp;utm_campaign=bitbucket_footer">JIRA</a>
+    </li>
+    <li>
+      <a id="atlassian-confluence-link" target="_blank" title="Content Creation, Collaboration & Knowledge Sharing for Teams."
+         href="http://www.atlassian.com/software/confluence/overview/team-collaboration-software?utm_source=bitbucket&amp;utm_medium=link&amp;utm_campaign=bitbucket_footer">Confluence</a>
+    </li>
+    <li>
+      <a id="atlassian-bamboo-link" target="_blank" title="Continuous integration and deployment, release management."
+         href="http://www.atlassian.com/software/bamboo/overview?utm_source=bitbucket&amp;utm_medium=link&amp;utm_campaign=bitbucket_footer">Bamboo</a>
+    </li>
+    <li>
+      <a id="atlassian-stash-link" target="_blank" title="Git repo management, behind your firewall and Enterprise-ready."
+         href="http://www.atlassian.com/software/stash/overview?utm_source=bitbucket&amp;utm_medium=link&amp;utm_campaign=bitbucket_footer">Stash</a>
+    </li>
+    <li>
+      <a id="atlassian-sourcetree-link" target="_blank" title="A free Git and Mercurial desktop client for Mac or Windows."
+         href="http://www.sourcetreeapp.com/?utm_source=bitbucket&amp;utm_medium=link&amp;utm_campaign=bitbucket_footer">SourceTree</a>
+    </li>
+  </ul>
+  <div id="footer-logo">
+    <a target="_blank" title="Bitbucket is developed by Atlassian in San Francisco."
+       href="http://www.atlassian.com?utm_source=bitbucket&amp;utm_medium=logo&amp;utm_campaign=bitbucket_footer">Atlassian</a>
+  </div>
+
+    </section>
+  </footer>
+</div>
+
+
+  
+  <script id="require-js"
+          src="https://d3oaxc4q5k2d6q.cloudfront.net/m/965d93c157b4/amd/build/main.js"
+          data-main="https://d3oaxc4q5k2d6q.cloudfront.net/m/965d93c157b4/amd/build/main"
+          data-page-module="repo/index"></script>
+
+
+
+
+<script>
+  (function () {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+  }());
+</script>
+
+<script>
+  window.BB = window.BB || {};
+  setTimeout(function () {
+    window.BB.JsLoaded = true;
+  }, 3000);
+</script>
+
+
+<script type="text/javascript">if(!NREUMQ.f){NREUMQ.f=function(){NREUMQ.push(["load",new Date().getTime()]);var e=document.createElement("script");e.type="text/javascript";e.src=(("http:"===document.location.protocol)?"http:":"https:")+"//"+"js-agent.newrelic.com/nr-100.js";document.body.appendChild(e);if(NREUMQ.a)NREUMQ.a();};NREUMQ.a=window.onload;window.onload=NREUMQ.f;};NREUMQ.push(["nrfj","beacon-2.newrelic.com","a2cef8c3d3","1841284","Z11RZxdWW0cEVkYLDV4XdUYLVEFdClsdAAtEWkZQDlJBGgRFQhFMQl1DXFcZQ10AQkFYDlFWV1oLUA==",0,726,new Date().getTime(),"","","","",""]);</script></body>
+</html>
