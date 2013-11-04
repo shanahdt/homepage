@@ -21,3 +21,8 @@ Daniel can be reached at dts9h [at] virginia [dot] edu.
    Bio.rst
    teaching.rst
 
+
+.. toctree::
+   :maxdepth: 1
+
+   News.rst
