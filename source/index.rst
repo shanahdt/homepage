@@ -25,4 +25,11 @@ Daniel can be reached at dts9h [at] virginia [dot] edu.
 .. toctree::
    :maxdepth: 1
 
-   News.rst
+
+News
+------
+
+11/4/13
+~~~~~~~~~~
+
+SMT Charlotte 
