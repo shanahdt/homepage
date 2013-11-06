@@ -1,6 +1,7 @@
 Biography
 -------------
 
+Welcome!!!
 Daniel Shanahan is scholar with interests in music theory, music 
 cognition, and musicology. His work focuses on the use of large 
 corpora for analyzing changes in musical style, 
