@@ -4,6 +4,9 @@
 Daniel Shanahan, PhD.
 ------------------------
 
+How well does this work?
+
+
 I am a scholar with interests in music theory, music
 cognition, and musicology. His work focuses on the use of large
 corpora for analyzing changes in musical style, computational music analysis
