@@ -24,7 +24,6 @@ I can be reached at dts9h [at] virginia [dot] edu.
    
    Bio.rst
    teaching.rst
-   :download: `CV <DanielShanahanCV2013.pdf>`
 
 .. toctree::
    :maxdepth: 1
