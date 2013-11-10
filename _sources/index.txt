@@ -23,7 +23,7 @@ I can be reached at dts9h [at] virginia [dot] edu.
    :maxdepth: 2
    
    Bio.rst
-   teaching.rst
+..   teaching.rst
 
 .. toctree::
    :maxdepth: 1
