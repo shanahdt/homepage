@@ -16,7 +16,10 @@ materials.
 
 I can be reached at dts9h [at] virginia [dot] edu.
 
+My UVa bio is `here <http://music.virginia.edu/faculty/profile/dts9h>`_
 
+My (now outdated) OSU bio, along with a list of some 
+publications and talks, can be found `here <http://musiccog.ohio-state.edu/home/index.php/Daniel_Shanahan>`_
 
 .. toctree::
    :maxdepth: 2
