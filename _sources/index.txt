@@ -34,6 +34,13 @@ publications and talks, can be found `here <http://musiccog.ohio-state.edu/home/
 News
 ~~~~~~~~~~
 
+11/13/13
+^^^^^^^^^^^^^
+
+Headed to Indianapolis to give a paper entitled "Using 'Big Data'
+to Examine the Effect of Environment on Listening Preferences." 
+I'm excited to experience a standalone SEM, and I'll link to the slides soon.
+
 11/4/13
 ^^^^^^^^^^^^^^^^
 
